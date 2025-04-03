@@ -7,7 +7,7 @@ namespace button {
 static const char *const TAG = "button";
 
 void Button::press() {
-  ESP_LOGD(TAG, "'%s' My button Pressed.", this->get_name().c_str());
+  ESP_LOGD(TAG, "'%s' Pressed.", this->get_name().c_str());
   this->press_action();
   this->press_callback_.call();
 }
